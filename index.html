@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header__inner">
+						<a href="#" class="header__logo">
+							<img src="img/logo.jpg" alt="Equibale Logo" class="header__logo-img img-responsive">
+						</a>
+						<div class="header__address">Swanmoor, Harracott, Barnstaple, Devon. EX31 3LG</div>
+						<a href="tel:+4401271532300" class="header__phone">+44 (0) 1271 532300</a>
+						<a href="mailto:info@haylage.co.uk" class="header__email">info@haylage.co.uk</a>
+						<a href="#" class="header__cart">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+							<span class="header__cart-title">Your cart</span>
+							&nbsp;
+							<span class="header__cart-count">1</span>
+						</a>
+						<a onclick="showNav()" class="burger-btn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navigation" id="fixed-nav">
+		<a href="#" class="navigation__link">Product</a>
+		<a href="#" class="navigation__link">Haylage</a>
+		<a href="#" class="navigation__link">Delivery</a>
+		<a href="#" class="navigation__link">FAQs</a>
+		<a href="#" class="navigation__link">Export Enquiries</a>
+		<a href="#" class="navigation__link">Contact Us</a>
+
+		<!-- Close burger menu button -->
+		<a onclick="hideNav()" class="burger-btn-hide">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+		</a>
+	</nav>
+
+	<section class="welcome">
+		<div class="welcome__title-wrap">
+			<div class="welcome__title">
+				<img src="img/logo.jpg" alt="Equibale Logo" class="welcome__title-logo img-responsive">
+
+				<div class="welcome__title-name">
+					<span>@</span>haylage.co.uk
+				</div>
+			</div>
+
+			<div class="welcome__title-text">
+				Specialist producers and direct suppliers of haylage for horses
+			</div>
+		</div>
+		<a href="#" class="welcome__learn-more">Learn More</a>
+	</section>
+
+	<section class="product" id="product-section">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="product__text">
+						Equibale@haylage.co.uk produces and supplies the full range of haylage types for in two sizes
+						<br>
+						(all weights approximate delivered weight)
+					</div>
+					<div class="product__cards-wrap">
+						<a href="#" class="product__cards-item">
+							<div class="product__cards-item-title">
+								Large 225kg
+							</div>
+							<div class="product__cards-item-tip">
+								Click for information
+							</div>
+							<img src="img/product-1.jpg" alt="Product Large" class="product__cards-item-img img-responsive">
+							<div class="product__cards-item-action">
+								<span>ORDER NOW</span>
+								<br>
+								or call or email us to discuss
+							</div>
+						</a>
+
+						<a href="#" class="product__cards-item">
+							<div class="product__cards-item-title">
+								Small 20kg
+							</div>
+							<div class="product__cards-item-tip">
+								Click for information
+							</div>
+							<img src="img/product-2.jpg" alt="Product Large" class="product__cards-item-img img-responsive">
+							<div class="product__cards-item-action">
+								<span>BUY IT NOW at £280</span>
+								<br>
+								Delivered tomorrow
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-12">
+					<div class="product__tips-item">
+						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
+						<div class="product__tips-item-text">
+							<b>Pricing policy</b>
+							<br>
+							Our prices are quoted in the “haylage types”
+							section. Whilst we price competitively,
+							we don’t compete on price. We compete
+							on service and consistent quality.
+							Call us to discuss on
+							01271 532399 or info@haylage.co.uk
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<div class="product__tips-item">
+						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
+						<div class="product__tips-item-text">
+							<b>Sample bales</b>
+							<br>
+							Changing haylage suppliers can be a
+							worry with large orders. So we can supply
+							an advance sample pallet of 4 x 225kg bales
+							for a price of circa £250, including delivery.
+							Call us to discuss on
+							01271 532399 or info@haylage.co.uk
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<div class="product__tips-item">
+						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
+						<div class="product__tips-item-text">
+							<b>Can we deliver to you</b>
+							<br>
+							Our price includes delivery to anywhere in
+							England and Wales with the exception
+							of the English counties of Cumbria,
+							Durham, Tyne and Wear and
+							Northumberland (where a surcharge
+							applies – ring for details on 01271 532300).
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="contact-footer__inner">
+						<a href="#" class="contact-footer__logo">
+							<img src="img/logo.png" alt="Logo" class="contact-footer__logo-img img-responsive">
+						</a>
+						<a href="#" class="contact-footer__link _phone">01271 532300</a>
+						<a href="#" class="contact-footer__link">Click here to order now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="green-line">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					All products delivered to you - All prices quoted include delivery - Haylage analysis available on request
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="haylage">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section__title">
+						Haylage Types
+					</div>
+					<div class="section__text">
+						Equibale@haylage.co.uk produces and supplies the full range of haylage types
+					</div>
+					<div class="haylage__descr">
+						225kg
+					</div>
+					<div class="haylage__inner">
+						<div class="haylage__item-wrap _first">
+							<div class="haylage__item">
+								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
+								<div class="haylage__item-title">
+									Gold<br>Ryegrass
+								</div>
+							</div>
+						</div>
+						<div class="haylage__item-wrap _second">
+							<div class="haylage__item _first">
+								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
+								<div class="haylage__item-title">
+									Silver<br>Ryegrass
+								</div>
+							</div>
+						</div>
+						<div class="haylage__item-wrap _third">
+							<div class="haylage__item">
+								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
+								<div class="haylage__item-title">
+									Standard<br>Ryegrass
+								</div>
+							</div>
+						</div>
+						<div class="haylage__item-wrap _fourth">
+							<div class="haylage__item">
+								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
+								<div class="haylage__item-title">
+									Meadowmix
+								</div>
+							</div>
+						</div>
+						<div class="haylage__item-wrap _fifth">
+							<div class="haylage__item">
+								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
+								<div class="haylage__item-title">
+									Timothy
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="haylage__descr">
+						20kg
+					</div>
+					<div class="haylage__inner">
+						<div class="haylage__item-wrap _third">
+							<div class="haylage__item">
+								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
+								<div class="haylage__item-title">
+									Ryegrass
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row product__tips-wrap">
+				<div class="col-md-4 col-sm-12">
+					<div class="product__tips-item _small">
+						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
+						<div class="product__tips-item-text">
+							<b>Nutrition</b>
+							<br>
+							We produce a range of haylage ryegrass,
+							timothy haylage and meadow mix. Each is
+							grown from carefully selected grasses that
+							result in the optimum end product.
+							All products are dust free.
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="product__tips-item _small">
+						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
+						<div class="product__tips-item-text">
+							<b>Consistent</b>
+							<br>
+							As producers, our approach is to make
+							a large amount of haylage in a very short
+							period on our own farm. The outcome is
+							a consistent product, cut at the right stage
+							of growth for consistency.
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="product__tips-item _small">
+						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
+						<div class="product__tips-item-text">
+							<b>Reliable</b>
+							<br>
+							We carry out every operation from seeding
+							to harvest, guaranteeing the end product.
+							Quality control virtually eliminates waste.
+							In house delivery with our own HGV lorry
+							and forklift.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="contact-footer__inner">
+						<a href="#" class="contact-footer__logo">
+							<img src="img/logo.png" alt="Logo" class="contact-footer__logo-img img-responsive">
+						</a>
+						<a href="#" class="contact-footer__link _phone">01271 532300</a>
+						<a href="#" class="contact-footer__link">Click here to order now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="green-line">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					All products delivered to you - All prices quoted include delivery - Haylage analysis available on request
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
