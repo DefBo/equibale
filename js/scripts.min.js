@@ -27,3 +27,14 @@ function showNav() {
 function hideNav() {
     root.classList.remove('_show-nav');
 }
+
+// Add smooth anchor scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
