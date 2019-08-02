@@ -34,7 +34,7 @@
 				<div class="col">
 					<div class="header__inner">
 						<a href="#" class="header__logo">
-							<img src="img/logo.jpg" alt="Equibale Logo" class="header__logo-img img-responsive">
+							<img src="img/logo.svg" alt="Equibale Logo" class="header__logo-img img-responsive">
 						</a>
 						<div class="header__address">Swanmoor, Harracott, Barnstaple, Devon. EX31 3LG</div>
 						<a href="tel:+4401271532300" class="header__phone">+44 (0) 1271 532300</a>
@@ -55,12 +55,12 @@
 	</header>
 
 	<nav class="navigation" id="fixed-nav">
-		<a href="#product-section" class="navigation__link">Product</a>
-		<a href="#haylage-section" class="navigation__link">Haylage</a>
-		<a href="#delivery-section" class="navigation__link">Delivery</a>
-		<a href="#faq-section" class="navigation__link">FAQs</a>
-		<a href="#about-us-section" class="navigation__link">Export Enquiries</a>
-		<a href="#contact-section" class="navigation__link">Contact Us</a>
+		<a href="#product-section" class="navigation__link" onclick="hideNav()">Product</a>
+		<a href="#haylage-section" class="navigation__link" onclick="hideNav()">Haylage</a>
+		<a href="#delivery-section" class="navigation__link" onclick="hideNav()">Delivery</a>
+		<a href="#faq-section" class="navigation__link" onclick="hideNav()">FAQs</a>
+		<a href="#about-us-section" class="navigation__link" onclick="hideNav()">Export Enquiries</a>
+		<a href="#contact-section" class="navigation__link" onclick="hideNav()">Contact Us</a>
 
 		<!-- Close burger menu button -->
 		<a onclick="hideNav()" class="burger-btn-hide">
@@ -71,7 +71,7 @@
 	<section class="welcome">
 		<div class="welcome__title-wrap">
 			<div class="welcome__title">
-				<img src="img/logo.jpg" alt="Equibale Logo" class="welcome__title-logo img-responsive">
+				<img src="img/logo.svg" alt="Equibale Logo" class="welcome__title-logo img-responsive">
 
 				<div class="welcome__title-name">
 					<span>@</span>haylage.co.uk
@@ -95,34 +95,93 @@
 						(all weights approximate delivered weight)
 					</div>
 					<div class="product__cards-wrap">
-						<a href="#" class="product__cards-item">
-							<div class="product__cards-item-title">
-								Large 225kg
-							</div>
-							<div class="product__cards-item-tip">
-								Click for information
-							</div>
-							<img src="img/product-1.jpg" alt="Product Large" class="product__cards-item-img img-responsive">
-							<div class="product__cards-item-action">
-								<span>ORDER NOW</span>
+						<a class="product__cards-item _to-right">
+							<span class="product__cards-item-inner">
+								<div class="product__cards-item-title">
+									Large 225kg
+								</div>
+								<div class="product__cards-item-tip">
+									Click for information
+								</div>
+								<img src="img/product-1.jpg" alt="Product Large" class="product__cards-item-img img-responsive">
+								<div class="product__cards-item-action">
+									<span>ORDER NOW</span>
+									<br>
+									or call or email us to discuss
+								</div>
+							</span>
+
+							<!--Modal-->
+							<span class="product__modal">
+								<i class="haylage__modal-close" onclick="_removeClassesProduct()">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										</i>
+								<p class="product__modal-text">
+									225KG (approx. delivered weight) bales. Our large bales
+									are suitable for stable yards of 6 horses or more.
+								</p>
 								<br>
-								or call or email us to discuss
-							</div>
+								<p class="product__modal-text">
+									On the basis of an average of 10kg consumption per day,
+									a delivery of 48 large bales (10,800 kg) will feed 10 horses
+									for 108 days or 5 horses for 216 days.
+								</p>
+								<br>
+								<p class="product__modal-text">
+									Our large bales are delivered in a palletised format by our
+									own driver and lorry with forklift, for your convenience, with
+									either 48 or 96 bales. Each pallet (measuring 1.5m x 1.2m)
+									has a 6 bale stack. The pallet has a plastic top hood and
+									an outer layer of plastic to protect the bales.
+									In line with our sustainability policy we collect and recycle
+									used plastic. info@haylage.co.uk
+								</p>
+							</span>
 						</a>
 
-						<a href="#" class="product__cards-item">
-							<div class="product__cards-item-title">
-								Small 20kg
-							</div>
-							<div class="product__cards-item-tip">
-								Click for information
-							</div>
-							<img src="img/product-2.jpg" alt="Product Large" class="product__cards-item-img img-responsive">
-							<div class="product__cards-item-action">
-								<span>BUY IT NOW at £280</span>
+						<a class="product__cards-item _to-left">
+							<span class="product__cards-item-inner">
+								<div class="product__cards-item-title">
+									Small 20kg
+								</div>
+								<div class="product__cards-item-tip">
+									Click for information
+								</div>
+								<img src="img/product-2.jpg" alt="Product Large" class="product__cards-item-img img-responsive">
+								<div class="product__cards-item-action">
+									<span>BUY IT NOW at £280</span>
+									<br>
+									Delivered tomorrow
+								</div>
+							</span>
+
+							<!--Modal-->
+							<span class="product__modal">
+								<i class="haylage__modal-close" onclick="_removeClassesProduct()">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										</i>
+								<p class="product__modal-text">
+									20KG (approx. delivered weight) bales
+									Our small bales are suitable for any stable yards requiring
+									the convenience of a delivered pallet of 40 small bales.
+									Next day delivery is typically possible if orders are made
+									before 11 am on the day before required delivery.
+								</p>
 								<br>
-								Delivered tomorrow
-							</div>
+								<p class="product__modal-text">
+									On the basis of an average of 10kg consumption per day,
+									a delivery of 40 small bales (400kg) will feed 1 horse for 40
+									days or 2 horses for 20 days.
+								</p>
+								<br>
+								<p class="product__modal-text">
+									Our small bales are delivered in a palletised format by
+									delivery courier. Each pallet (measuring 1.5??m x 1.2m??)
+									has a 8 bale stack. The pallet has an outer layer of plastic
+									to protect the bales. In line with our sustainability policy
+									we collect and recycle used plastic. info@haylage.co.uk
+								</p>
+							</span>
 						</a>
 					</div>
 				</div>
@@ -130,7 +189,6 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-12">
 					<div class="product__tips-item">
-						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
 						<div class="product__tips-item-text">
 							<b>Pricing policy</b>
 							<br>
@@ -145,7 +203,6 @@
 				</div>
 				<div class="col-lg-4 col-md-12">
 					<div class="product__tips-item">
-						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
 						<div class="product__tips-item-text">
 							<b>Sample bales</b>
 							<br>
@@ -160,7 +217,6 @@
 				</div>
 				<div class="col-lg-4 col-md-12">
 					<div class="product__tips-item">
-						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
 						<div class="product__tips-item-text">
 							<b>Can we deliver to you</b>
 							<br>
@@ -182,10 +238,10 @@
 			<div class="row">
 				<div class="col">
 					<div class="contact-footer__inner">
-						<a href="#" class="contact-footer__logo">
+						<a href="index.html" class="contact-footer__logo">
 							<img src="img/logo.png" alt="Logo" class="contact-footer__logo-img img-responsive">
 						</a>
-						<a href="#" class="contact-footer__link _phone">01271 532300</a>
+						<a href="mob:01271532300" class="contact-footer__link _phone">01271 532300</a>
 						<a href="#" class="contact-footer__link">Click here to order now</a>
 					</div>
 				</div>
@@ -219,41 +275,172 @@
 					<div class="haylage__inner">
 						<div class="haylage__item-wrap _first">
 							<div class="haylage__item">
-								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
 								<div class="haylage__item-title">
 									Gold<br>Ryegrass
+								</div>
+							</div>
+
+							<!--Haylage modal-->
+							<div class="haylage__modal">
+								<div class="haylage__modal-inner">
+									<div class="haylage__modal-wrap">
+										<i class="haylage__modal-close" onclick="_removeClasses()">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										</i>
+										<img src="img/logo.png" alt="Logo" class="haylage__modal-img">
+										<p class="haylage__modal-text _mr-250">Gold Ryegrass - £price on enquiry</p>
+										<p class="haylage__modal-text _mr-250">Delivered 48 or 96 bales</p>
+										<p class="haylage__modal-text _mr-250"><b>Equibale Gold</b> is our premier product.</p>
+										<p class="haylage__modal-text _description">Focused on customers who simply want the very best for their horses,
+											Equibale Gold is a thick stemmed, first cut ryegrass product of around
+											10% protein. We select a suitable batch from one location, produced at the
+											same time. Where a customer requires it, we hold it in stock to ensure you
+											have the exact same product throughout your season. In limited supply,
+											it is the best of our annual stock, graded to ensure the batches are as
+											consistent as possible.</p>
+										<p class="haylage__modal-text">We carry out full microbial and nutritional analysis on all batches,
+											supplied free of charge.</p>
+									</div>
+									<a href="#" class="haylage__modal-link">
+										<span>IN STOCK</span>
+										<span>click to order now</span>
+									</a>
 								</div>
 							</div>
 						</div>
 						<div class="haylage__item-wrap _second">
 							<div class="haylage__item _first">
-								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
 								<div class="haylage__item-title">
 									Silver<br>Ryegrass
+								</div>
+							</div>
+
+							<!--Haylage modal-->
+							<div class="haylage__modal">
+								<div class="haylage__modal-inner">
+									<div class="haylage__modal-wrap">
+										<i class="haylage__modal-close" onclick="_removeClasses()">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										</i>
+										<img src="img/logo.png" alt="Logo" class="haylage__modal-img">
+										<p class="haylage__modal-text _mr-250">Silver Ryegrass – £price on enquiry</p>
+										<p class="haylage__modal-text _mr-250">Delivered 48 or 96 bales</p>
+										<p class="haylage__modal-text _mr-250"><b>Silver Rygrass</b> is a popular product.</p>
+										<p class="haylage__modal-text _description">Typically ordered by yards focused on high performance horses, Silver
+											Rygrass is essentially the same high quality product as the Gold Ryegrass
+											and made to the same exacting standards. Silver Ryegrass is made from
+											first year ryegrasses.</p>
+										<p class="haylage__modal-text _description">This difference is that it comes from mixed batches and can vary as a
+											result of differences in location and timing of production.</p>
+										<p class="haylage__modal-text">We carry out full microbial and nutritional analysis on all batches, supplied
+											free of charge.</p>
+									</div>
+									<a href="#" class="haylage__modal-link">
+										<span>IN STOCK<br>AUGUST 2019</span>
+										<span>click to order now</span>
+									</a>
 								</div>
 							</div>
 						</div>
 						<div class="haylage__item-wrap _third">
 							<div class="haylage__item">
-								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
 								<div class="haylage__item-title">
 									Standard<br>Ryegrass
+								</div>
+							</div>
+
+							<!--Haylage modal-->
+							<div class="haylage__modal">
+								<div class="haylage__modal-inner">
+									<div class="haylage__modal-wrap">
+										<i class="haylage__modal-close" onclick="_removeClasses()">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										</i>
+										<img src="img/logo.png" alt="Logo" class="haylage__modal-img">
+										<p class="haylage__modal-text _mr-250">Standard Ryegrass - £48 per bale</p>
+										<p class="haylage__modal-text _mr-250">Delivered 48 or 96 bales</p>
+										<p class="haylage__modal-text _mr-250"><b>Equibale Standard Ryegrass</b> is a more economically
+											priced ryegrass product but still produced by us to the same exacting
+											standards as we apply to Equibale Gold and Silver.</p>
+										<p class="haylage__modal-text _description">The difference is that standard Ryegrass is made from ryegrasses in
+											their second and third year of production. They are either first or second
+											cut with second cut typically having a lower protein levels in light of the
+											shorter growing time.</p>
+										<p class="haylage__modal-text">We provide analysis but there will be variations between and within each
+											batch.</p>
+									</div>
+									<a href="#" class="haylage__modal-link">
+										<span>IN STOCK</span>
+										<span>click to order now</span>
+									</a>
 								</div>
 							</div>
 						</div>
 						<div class="haylage__item-wrap _fourth">
 							<div class="haylage__item">
-								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
 								<div class="haylage__item-title">
 									Meadowmix
+								</div>
+							</div>
+
+							<!--Haylage modal-->
+							<div class="haylage__modal">
+								<div class="haylage__modal-inner">
+									<div class="haylage__modal-wrap">
+										<i class="haylage__modal-close" onclick="_removeClasses()">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										</i>
+										<img src="img/logo.png" alt="Logo" class="haylage__modal-img">
+										<p class="haylage__modal-text _mr-250">Meadowmix Ryegrass - £48 per bale</p>
+										<p class="haylage__modal-text _mr-250">Delivered 48 or 96 bales</p>
+										<p class="haylage__modal-text _mr-250"><b>Meadowmix Haylage</b> is made from a mix of carefully chosen mix
+											of grass varieties to mimic the type of grasses a horse might naturally
+											graze. It is produced to the same standards as all of our haylage types.</p>
+										<br>
+										<p class="haylage__modal-text">Perhaps the most traditional of the haylage types, Equibale Meadowmix
+											is chosen by some race horse trainers and studs in preference to
+											a ryegrass based haylage and hard feed is used to get the required
+											nutrition balance. Supplied to many livery yards, it is also fed out of
+											season to give some variety and to customers with horses who they
+											perceive don’t do as well on a ryegrass diet.</p>
+									</div>
+									<a href="#" class="haylage__modal-link">
+										<span>IN STOCK<br>limited supply</span>
+										<span>click to order now</span>
+									</a>
 								</div>
 							</div>
 						</div>
 						<div class="haylage__item-wrap _fifth">
 							<div class="haylage__item">
-								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
 								<div class="haylage__item-title">
 									Timothy
+								</div>
+							</div>
+
+							<!--Haylage modal-->
+							<div class="haylage__modal">
+								<div class="haylage__modal-inner">
+									<div class="haylage__modal-wrap">
+										<i class="haylage__modal-close" onclick="_removeClasses()">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										</i>
+										<img src="img/logo.png" alt="Logo" class="haylage__modal-img">
+										<p class="haylage__modal-text _mr-250">Timothy - £48 per bale</p>
+										<p class="haylage__modal-text _mr-250">Delivered 48 or 96 bales</p>
+										<p class="haylage__modal-text _mr-250"><b>Equibale Timothy</b> is an alternative to the more common ryegrass
+											Haylage and is in high demand.</p>
+										<p class="haylage__modal-text _description">Equibale Timothy is made from pure timothy grass. It is well known as
+											a great alternative for horses who tend to ‘hot up’ on ryegrass and is also
+											generally suitable for laminitic horses as it has a very low sugar content.</p>
+										<p class="haylage__modal-text">It has a very different – but still highly attractive - smell  to ryegrass
+											haylage and tends to be very ‘long stranded’. It is typically an appealing
+											forage for even the most fussy of eaters.</p>
+									</div>
+									<a href="#" class="haylage__modal-link">
+										<span>IN STOCK<br>AUGUST 2019</span>
+										<span>click to order now</span>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -264,9 +451,37 @@
 					<div class="haylage__inner">
 						<div class="haylage__item-wrap _third">
 							<div class="haylage__item">
-								<img src="img/logo.jpg" alt="Logo" class="haylage__item-logo img-responsive">
 								<div class="haylage__item-title">
 									Ryegrass
+								</div>
+							</div>
+
+							<!--Haylage modal-->
+							<div class="haylage__modal">
+								<div class="haylage__modal-inner">
+									<div class="haylage__modal-wrap">
+										<i class="haylage__modal-close" onclick="_removeClasses()">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										</i>
+										<img src="img/logo.png" alt="Logo" class="haylage__modal-img">
+										<p class="haylage__modal-text _mr-250">Ryegrass small bales - £7 per bale</p>
+										<p class="haylage__modal-text _mr-250">Delivered 40 bales to a pallet</p>
+										<br>
+										<p class="haylage__modal-text _mr-250">Typically ordered by yards focused on high performance horses,
+											Rygrass is essentially the same high quality product as the Gold Ryegrass
+											and made to the same exacting standards. Ryegrass is made from
+											first year ryegrasses.</p>
+										<br>
+										<p class="haylage__modal-text">This difference is that it comes from mixed batches and can vary as a
+											result of differences in location and timing of production.</p>
+										<br>
+										<p class="haylage__modal-text">We carry out full microbial and nutritional analysis on all batches, supplied
+											free of charge.</p>
+									</div>
+									<a href="#" class="haylage__modal-link">
+										<span>IN STOCK</span>
+										<span>click to order now</span>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -275,8 +490,7 @@
 			</div>
 			<div class="row product__tips-wrap">
 				<div class="col-md-4 col-sm-12">
-					<div class="product__tips-item _small">
-						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
+					<div class="product__tips-item">
 						<div class="product__tips-item-text">
 							<b>Nutrition</b>
 							<br>
@@ -289,8 +503,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12">
-					<div class="product__tips-item _small">
-						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
+					<div class="product__tips-item">
 						<div class="product__tips-item-text">
 							<b>Consistent</b>
 							<br>
@@ -303,8 +516,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12">
-					<div class="product__tips-item _small">
-						<img src="img/product-tips-logo.jpg" alt="Logo" class="product__tips-item-logo">
+					<div class="product__tips-item">
 						<div class="product__tips-item-text">
 							<b>Reliable</b>
 							<br>
@@ -394,13 +606,55 @@
 						</ul>
 					</div>
 					<div class="delivery__buttons">
-						<a href="#" class="delivery__buttons-item">
-							Click to learn about
-							our recycling policy
+						<a class="delivery__buttons-item">
+							<span class="delivery__buttons-item-link">
+								Click to learn about
+								our recycling policy
+							</span>
+
+							<!--Modal-->
+							<span class="delivery__modal">
+								<i class="haylage__modal-close" onclick="_removeClassesDelivery()">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										</i>
+								<span class="delivery__modal-text">
+									<b>Recycling Policy</b><br>
+									We realise that haylage itself is
+									a as an environmental cost. So
+									as part of our service, we collect
+									plastic on our next visit to your
+									yard and return it to the farm for
+									recycling.
+								</span>
+							</span>
 						</a>
-						<a href="#" class="delivery__buttons-item">
-							Click to see how the
-							haylage arrives on site
+						<a class="delivery__buttons-item">
+							<span class="delivery__buttons-item-link">
+								Click to see how the
+								haylage arrives on site
+							</span>
+
+							<!--Modal-->
+							<span class="delivery__modal">
+								<i class="haylage__modal-close" onclick="_removeClassesDelivery()">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										</i>
+								<span class="delivery__modal-text">
+									<b>Equibales</b> are delivered in a palletised
+									format. Each pallet measures
+									1.5m x 1.2m and carries 6 225kg
+									stacked bales. The pallet then has
+									a hood over the top and an outer
+									layer of plastic to protect the bales.
+									<img src="img/del-modal-img.jpg" alt="Product Image" class="delivery__modal-img">
+									Once opened, each bale comprises
+									of approximately 25 even slices.
+									These slices are tightly compressed
+									into each bale with 4 strings around
+									them. The bale will grow by about
+									50% once the strings are cut.
+								</span>
+							</span>
 						</a>
 					</div>
 				</div>
@@ -838,7 +1092,7 @@
 			<div class="row">
 				<div class="col footer__copyright">
 					<a href="#" class="header__logo">
-						<img src="img/logo.jpg" alt="Equibale Logo" class="header__logo-img img-responsive">
+						<img src="img/logo.svg" alt="Equibale Logo" class="header__logo-img img-responsive">
 					</a>
 					<div class="section__descr">
 						VAT Number 302026175

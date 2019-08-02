@@ -28,13 +28,65 @@ function hideNav() {
     root.classList.remove('_show-nav');
 }
 
-// Add smooth anchor scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+// Toggle class _active by clicking on interactive "haylage__item-wrap" item
+var tagItems = document.querySelectorAll('.haylage__item');
+[].forEach.call(tagItems, function(el, i, tagItems) {
+    el.addEventListener('click', function() {
+        [].forEach.call(tagItems, function(el) {
+            if(el !== this) {
+                el.parentNode.classList.remove("_active");
+            } else {
+                el.parentNode.classList.toggle("_active");
+            }
+        }, this);
     });
 });
+
+function _removeClasses() {
+    var haylageModal = document.querySelectorAll('.haylage__item-wrap');
+    [].forEach.call(haylageModal, function(el) {
+        el.classList.remove("_active");
+    }, this);
+}
+
+// Toggle class _active by clicking on interactive "delivery__buttons-item-link" item
+var tagItems = document.querySelectorAll('.delivery__buttons-item-link');
+[].forEach.call(tagItems, function(el, i, tagItems) {
+    el.addEventListener('click', function() {
+        [].forEach.call(tagItems, function(el) {
+            if(el !== this) {
+                el.parentNode.classList.remove("_active");
+            } else {
+                el.parentNode.classList.toggle("_active");
+            }
+        }, this);
+    });
+});
+
+function _removeClassesDelivery() {
+    var haylageModal = document.querySelectorAll('.delivery__buttons-item');
+    [].forEach.call(haylageModal, function(el) {
+        el.classList.remove("_active");
+    }, this);
+}
+
+// Toggle class _active by clicking on interactive "product__cards-item-inner" item
+var tagItems = document.querySelectorAll('.product__cards-item-inner');
+[].forEach.call(tagItems, function(el, i, tagItems) {
+    el.addEventListener('click', function() {
+        [].forEach.call(tagItems, function(el) {
+            if(el !== this) {
+                el.parentNode.classList.remove("_active");
+            } else {
+                el.parentNode.classList.toggle("_active");
+            }
+        }, this);
+    });
+});
+
+function _removeClassesProduct() {
+    var haylageModal = document.querySelectorAll('.product__cards-item');
+    [].forEach.call(haylageModal, function(el) {
+        el.classList.remove("_active");
+    }, this);
+}
