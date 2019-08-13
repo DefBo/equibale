@@ -90,3 +90,14 @@ function _removeClassesProduct() {
         el.classList.remove("_active");
     }, this);
 }
+
+// Smooth anchor link scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
